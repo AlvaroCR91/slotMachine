@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="monedas">
+            <button id="moneda" onclick="agregarMoneda()">Agregar Monedas</button>
+        </div>
+        <div class="maquina">
+            <div class="estadisticas">
+                <p>Partidas Jugadas: <span id="partidasJugadas"></span></p>
+                <p>Partidas Ganadas: <span id="partidasGanadas"></span></p>
+                <p>Partidas Perdidas: <span id="partidasPerdidas"></span></p>
+                <p>Monedas: <span id="monedas">0</span></p>
+                <p>Premio: <span id="premio">0</span></p>
+            </div>
+            <img id="maquina" src="img/maquinaTragaperras.jpg" alt="tragaperras">
+        </div>
+        <div class="palanca">
+            <button style="border-radius: 20px;" id="Palanca" onclick="tirada()" ;>Tira de la Palanca</button>
+        </div>
+        <div class="foto0">
+            <img id="slot1" src="img/delegado1.jpg" alt="foto1" width="100%" height="100%">
+            <img id="slot2" src="img/delegado2.jpg" alt="foto2" width="100%" height="100%">
+            <img id="slot3" src="img/delegado3.jpg" alt="foto2" width="100%" height="100%">
+        </div>
+    </div>
+
+    <audio id="audio" src="tragaperras.mp3"></audio>
+    <script src="juego.js" type="text/javascript"></script>
+</body>
+
+</html>
